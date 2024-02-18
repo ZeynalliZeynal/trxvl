@@ -1,0 +1,21 @@
+@use './function';
+
+$default-ff: Arial, Helvetica, sans-serif;
+
+// Colors
+$btn-bg: rgb(38, 89, 195);
+$footer-clr: rgb(128, 128, 128);
+
+// Font-sizes
+$xxsmall: 13px;
+$xsmall: 14px;
+$small: 18px;
+$medium: 20px;
+$large: 24px;
+$xlarge: 48px;
+$xlarge: 56px;
+
+$secondary-heading: 32px;
+$primary-heading: 72px;
+
+$h1-fs: $primary-heading;

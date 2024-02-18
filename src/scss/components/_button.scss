@@ -1,0 +1,19 @@
+@use '../utils/variable' as *;
+@use '../utils/mixin' as *;
+@use '../utils/extend' as *;
+
+.btn {
+  padding: 12px 32px;
+  border-radius: 2rem;
+  font-weight: 600;
+
+  &--white {
+    background-color: white;
+    color: $btn-bg;
+  }
+
+  &--blue {
+    background-color: $btn-bg;
+    color: white;
+  }
+}

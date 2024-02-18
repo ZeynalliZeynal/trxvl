@@ -1,0 +1,35 @@
+@use '../utils/variable' as *;
+@use '../utils/mixin' as *;
+@use '../utils/extend' as *;
+
+#banner {
+  color: white;
+  h1 {
+    width: 760px;
+    font-weight: 700;
+  }
+  form {
+    @include flexbox(center, space-between, wrap);
+    margin-top: 40px;
+    width: 100%;
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0.5rem 1rem;
+
+    .form-item {
+      padding: 12px 8px;
+      @include flexbox(center, center, wrap, 10px);
+      color: rgba(255, 255, 255, 0.7);
+      .search-input {
+        color: inherit;
+      }
+      &:hover {
+        color: #fff;
+      }
+    }
+    .form-btns {
+      @include flexbox(center, space-between, wrap);
+    }
+  }
+}

@@ -1,0 +1,21 @@
+@use '../utils/variable' as *;
+@use '../utils/mixin' as *;
+@use '../utils/extend' as *;
+
+.bgImg {
+  @include position(absolute, 0);
+  @include bg-img(100%, no-repeat, start);
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+
+  &::before {
+    @include position(absolute, 0);
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0) 13.647%
+      ),
+      rgba(0, 0, 0, 0.3);
+  }
+}
